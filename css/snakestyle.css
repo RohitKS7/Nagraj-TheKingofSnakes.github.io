@@ -13,6 +13,15 @@
     align-items: center; 
 }
 
+#heading{
+    position: absolute;
+    top: 23px;
+    left: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
 #scoreBox{
     position: absolute;
     top: 10px;
