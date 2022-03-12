@@ -50,7 +50,6 @@ function gameEngine() {
         alert("Game Over. Press 'OK' to play again");
         snakeArr = [{x: 13, y: 15}];
         score = 0;
-        score = " ";
     }
     
     // IF you had eaten the food, increment the score and regenerate  the food -
@@ -102,6 +101,7 @@ function gameEngine() {
 
 
 // All game logic starts here -
+musicSound.play();
 let hiscore = localStorage.getItem('hiscore');
 if(hiscore === null){
     hiscoreval = 0;
@@ -109,7 +109,7 @@ if(hiscore === null){
 }
 else{
     hiscoreval = JSON.parse(hiscore);
-    highScoreBox.innerHTML = "HighScore: " + hiscoreval;
+    highScoreBox.innerHTML = "HighScore: " + hiscore;
 }
 window.requestAnimationFrame(main);
 window.addEventListener('keydown', e=>{
