@@ -3,14 +3,24 @@
     padding: 0;
     margin: 0;
 }
-
+body{
+    background-color: #1bc71d;
+}
 .body{
-    background: url("../img/bg.jpg");
     min-height: 100vh;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center; 
+}
+
+img{
+    display: flex;
+    position: absolute;
+    top: 14em;
+    height: 65%;
+    right: 0px;
+    width: 32%;
 }
 
 #heading{
@@ -77,4 +87,13 @@
     border: .25vmin solid black;
     border-radius: 8px;
     box-shadow: 0px 0px 6px 2px;
+}
+
+h4 {
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    font-size: 25px;
+    font-family: 'New Tegomin', serif;
 }
